@@ -5,6 +5,9 @@
 ## 前言
 使用`vue-cli`可以直接生成一个包含`unit & e2e`测试的开发环境。这里我们主要针对`unit`文件进行`单元测试`。
 
+## 命令行效果预览
+![命令行](https://user-gold-cdn.xitu.io/2017/12/3/1601bbefdc785a3a?w=675&h=395&f=jpeg&s=271601)
+
 ## test/unit 文件结构及分析
 ```
 ├── coverage
