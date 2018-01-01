@@ -415,13 +415,14 @@ describe('MockTestComponet', () => {
     expect(data.msg).toEqual('waiting')
   })
 
-  it('the msg should change when created', async () => {
+  it('the msg should change when created', async (done) => {
     // const vm = new Vue(MockTestComponet).$mount()
     const Ctor = Vue.extend(MockTestComponet)
     const vm = new Ctor().$mount()
 
     setTimeout(() => {
       expect(vm.msg).toEqual('Hi, Vue')
+      done()
     }, 0)
   })
 
